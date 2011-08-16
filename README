@@ -1,0 +1,11 @@
+Frinkbot is a little Ruby IRC bot that evaluates Frink code using the online interface for Frink.
+
+Requirements
+------------
+
+Frinkbot requires the 'cinch', 'patron', and 'nokogiri' gems.
+
+Links
+-----
+
+Check out http://futureboy.us/frinkdocs/ and http://futureboy.us/fsp/frink.fsp
