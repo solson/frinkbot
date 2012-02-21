@@ -61,7 +61,7 @@ bot = Cinch::Bot.new do
     end
   end
 
-  on :message, /^#{Regexp.escape nick}\S*\s*(.+)$/ do |m, code|
+  on :message, /^#{Regexp.escape nick}\S*[:,]\s*(.+)$/ do |m, code|
     m.reply(frink(code), true)
   end
 end
