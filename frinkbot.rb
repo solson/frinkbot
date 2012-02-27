@@ -2,12 +2,22 @@ require 'cinch'
 require 'patron'
 require 'nokogiri'
 require 'cgi'
+require 'configru'
+
+Configru.load do
+  just 'config.yml'
+
+  defaults do
+    port 6667
+  end
+end
 
 bot = Cinch::Bot.new do
   configure do |c|
-    c.server   = "onyx.ninthbit.net"
-    c.nick     = "frink"
-    c.channels = ["#programming", "#offtopic", "#bots"]
+    c.server   = Configru.server
+    c.port     = Configru.port
+    c.nick     = Configru.nick
+    c.channels = Configru.channels
   end
 
   helpers do

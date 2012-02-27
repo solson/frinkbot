@@ -1,0 +1,4 @@
+nick: frink
+server: irc.example.net
+channels:
+  - '#example'
