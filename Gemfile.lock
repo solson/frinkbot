@@ -1,0 +1,16 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    cinch (1.1.3)
+    configru (0.4.1)
+    nokogiri (1.5.5)
+    patron (0.4.18)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cinch (~> 1.1.3)
+  configru (~> 0.4.0)
+  nokogiri (~> 1.5.0)
+  patron (~> 0.4.0)
